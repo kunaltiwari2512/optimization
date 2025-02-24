@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7f2;
+}
+
+nav {
+    background-color: #2e5e2e; /* Dark green */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Light green hover */
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e8f5e9; /* Very light green */
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+}
+
+.cta-button {
+    padding: 0.5rem 1rem;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.service {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #a5d6a7;
+}
+/* Font Setup */
+body {
+    font-family: 'Roboto', sans-serif; /* Default body text */
+    line-height: 1.6;
+    background-color: #f5f7f2;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Elegant headings */
+    color: #2e5e2e; /* Dark green for headings */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 3rem 2rem; /* More spacing */
+    background-color: #e8f5e9;
+}
+
+/* Main Sections */
+main {
+    padding: 0 2rem 4rem; /* Bottom padding for footer clearance */
+}
+
+.intro-section, .mission-section {
+    padding: 4rem 0; /* Vertical spacing */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem; /* Space between text and image */
+}
+
+.text-left, .text-right {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-left h2, .text-right h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.text-left p, .text-right p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.image-right, .image-left {
+    flex: 1;
+    max-width: 45%;
+}
+
+.gallery-image {
+    max-width: 100%; /* Responsive within container */
+    width: auto;
+    height: auto;
+    border-radius: 15px; /* Curvy corners */
+    border: 2px solid #81c784;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem; /* Larger button */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* Ensure footer stays at bottom */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e5e2e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to next line */
+    gap: 1rem; /* Space between images */
+    justify-content: center; /* Centers images horizontally */
+    margin-top: 2rem;
+    max-width: 100%; /* Prevents overflow */
+    overflow-x: hidden; /* Hides any horizontal overflow */
+}
+
+.gallery-container img {
+    max-width: 300px; /* Maximum width to keep things manageable */
+    width: auto; /* Allows natural width up to max-width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px; /* Rounded corners for curvy effect */
+    border: 2px solid #81c784; /* Keeps your green border */
+    object-fit: cover; /* Ensures images fill space nicely */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for flowy feel */
+}
+/* .gallery-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #81c784;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #a5d6a7;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e5e2e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Services Intro */
+.services-intro {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #e8f5e9;
+}
+
+.services-intro h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.services-intro p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Sections */
+.services-section {
+    padding: 4rem 0;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.text-left, .text-right {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-left h2, .text-right h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.text-left p, .text-right p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.image-right, .image-left {
+    flex: 1;
+    max-width: 45%;
+}
+
+.gallery-image {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #81c784;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f5f7f2;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* Contact Header */
+.contact-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #e8f5e9;
+    margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 40%;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.contact-info img {
+    margin-top: 2rem;
+}
+
+/* Form Styling */
+.contact-form {
+    flex: 1;
+    max-width: 55%;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #a5d6a7;
+    border-radius: 10px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -0.8rem;
+    left: 0.8rem;
+    font-size: 0.85rem;
+    color: #4caf50;
+    background-color: #fff;
+    padding: 0 0.3rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-button {
+    padding: 0.75rem 2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.form-button:active {
+    transform: scale(0.95);
+}
+
+/* Gallery Image Consistency */
+.gallery-image {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #81c784;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Active Navigation Link */
+nav ul li a.active {
+    color: #4caf50;
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50;
+}
+
+/* Scroll-to-Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+section {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+section.fade-in {
+    opacity: 1;
+}
